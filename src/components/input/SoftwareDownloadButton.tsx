@@ -1,7 +1,7 @@
 import { Menu, Transition } from "@headlessui/react";
 import clsx from "clsx";
 import { Fragment, useState } from "react";
-import { ReactComponent as CloneIcon } from "../../../assets/icons/heroicons/chevron-down.svg";
+import { ReactComponent as CloneIcon } from "../../../assets/icons/fontawesome/clone-icon.svg";
 import { ReactComponent as ChevronDownIcon } from "../../../assets/icons/heroicons/chevron-down.svg";
 import { ReactComponent as DocumentDownloadIcon } from "../../../assets/icons/heroicons/document-download.svg";
 import {getVersionBuildDownloadURL} from "../../lib/service/v2";
@@ -104,7 +104,7 @@ const SoftwareDownloadButton = ({
       >
         <Menu.Items
           className={clsx(
-            "absolute mt-2 rounded-md shadow-lg divide-y divide-gray-200 border border-gray-200 dark:divide-gray-800 dark:border-gray-800 z-40",
+            "absolute mt-2 rounded-md bg-background-light-10 shadow-lg divide-y divide-gray-200 border border-gray-200 dark:(bg-background-dark-80 divide-gray-800 border-gray-800) z-40",
             compact
               ? "origin-top-right right-0"
               : "origin-top-left left-0 w-full md:w-auto"
